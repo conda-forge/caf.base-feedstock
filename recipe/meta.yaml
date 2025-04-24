@@ -1,5 +1,6 @@
 {% set name = "caf.base" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caf_base-{{ version }}.tar.gz
-  sha256: df3ef213dd3e96231107fddd9e25b1eff1392d2c0c83b941ceb9214676007b12
+  sha256: 493709fcd9738ffcd8967f677a002520089d40455c907b9864f16b011e6b60fb
 
 build:
   noarch: python
@@ -21,12 +22,12 @@ requirements:
     - versioningit
     - pip
   run:
-    - python >={{ python_min }},<3.12
-    - numpy >=1.24.3,<2
-    - pandas >=2.0.0
-    - caf.toolkit >=0.4.0
+    - python >={{ python_min }}
+    - numpy >=1.24.3
+    - pandas >=2.2
+    - caf.toolkit >=0.9.0
     - h5py >=3.9.0
-    - pydantic >=1.10.12
+    - pydantic >=2.7
     - scipy >=1.11.3
     - strictyaml >=1.7.3
     - pytables >=3.9.1
