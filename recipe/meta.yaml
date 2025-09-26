@@ -1,6 +1,6 @@
 {% set name = "caf.base" %}
 {% set version = "0.4.0" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -45,7 +45,7 @@ about:
   home: https://github.com/Transport-for-the-North/caf.base
   summary: Core classes and definitions for CAF family of tools
   dev_url: https://github.com/Transport-for-the-North/caf.base
-  license: GPL-3.0-only
+  license: LicenseRef-TfN-License
   license_file: LICENSE
 
 extra:
