@@ -1,6 +1,6 @@
 {% set name = "caf.base" %}
-{% set version = "0.3.0" %}
-{% set python_min = "3.10" %}
+{% set version = "0.4.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caf_base-{{ version }}.tar.gz
-  sha256: 493709fcd9738ffcd8967f677a002520089d40455c907b9864f16b011e6b60fb
+  sha256: 6e80cd871ffbe05ffcc82c05d396bfa3e960dc6a05895c042b7405a522df93d1
 
 build:
   noarch: python
@@ -45,7 +45,7 @@ about:
   home: https://github.com/Transport-for-the-North/caf.base
   summary: Core classes and definitions for CAF family of tools
   dev_url: https://github.com/Transport-for-the-North/caf.base
-  license: GPL-3.0-only
+  license: LicenseRef-TfN-License
   license_file: LICENSE
 
 extra:
