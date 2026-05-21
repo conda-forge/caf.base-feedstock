@@ -1,5 +1,5 @@
 {% set name = "caf.base" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caf_base-{{ version }}.tar.gz
-  sha256: 6e80cd871ffbe05ffcc82c05d396bfa3e960dc6a05895c042b7405a522df93d1
+  sha256: e539138cd605d13f3d8f2b75161eb603d1be896af5c2dffafa02ef11aee26da3
 
 build:
   noarch: python
